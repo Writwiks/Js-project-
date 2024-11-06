@@ -93,6 +93,18 @@ nav ul li a {
   line-height: 22.4px;
   text-align: center;
 }
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
 
 /* Hero Section */
 .hero {
@@ -202,15 +214,13 @@ nav ul li a {
 
 .trending-collection {
   text-align: center;
-  height: 836px;
-  padding: 40px 0;
-  padding: 80px 0px 80px 0px;
+  padding: 80px 0;
   gap: 60px;
 }
 .title {
   color: white;
   margin-bottom: 10px;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-size: 38px;
   font-weight: 600;
   line-height: 45.6px;
@@ -219,7 +229,7 @@ nav ul li a {
 .subtitle {
   color: white;
   margin-bottom: 40px;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 35.2px;
@@ -228,19 +238,19 @@ nav ul li a {
 .collection {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 .item {
   box-sizing: border-box;
   width: 330px;
-  height: 330px;
-  border-radius: 20px 0px 0px 0px;
+  border-radius: 20px 0 0 0;
 }
 .item img {
   width: 100%;
   border-radius: 10px;
 }
 .trend {
-  height: 836px;
+  height: auto;
 }
 .item .thumbnails {
   display: flex;
@@ -248,21 +258,22 @@ nav ul li a {
   margin-top: 10px;
 }
 .item .thumbnails img {
-  border-radius: 10px;
   width: 100px;
   height: 100px;
-  border-radius: 20px 0px 0px 0px;
+  border-radius: 20px 0 0 0;
 }
 .item .count {
   background-color: #a259ff;
   color: #ffffff;
   padding: 10px 18px;
   text-align: center;
-  line-height: 5;
   font-weight: bold;
   width: 100px;
   height: 100px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .item .title {
   font-size: 1.2em;
@@ -280,12 +291,11 @@ nav ul li a {
   border-radius: 50%;
   margin-right: 5px;
 }
-
 /* Top Creators Section */
 .Top-Creators {
   background-color: #2b2b2b;
   color: #ffffff;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   height: 1085px;
 }
 
@@ -386,13 +396,12 @@ nav ul li a {
   margin: 0;
 }
 
-
 /* Browse Categories Section  */
 
 .browse-categories {
   font-family: "Work Sans", sans-serif;
   color: white;
-  height: 883px;
+  /* height: 883px; */
 }
 .browse-title h1 {
   font-size: 38px;
@@ -633,61 +642,62 @@ nav ul li a {
   background-color: #2b2b2b;
   color: #ffffff;
   font-family: "Arial", sans-serif;
-  display: flex;
-  align-items: center;
-  height: 738px;
+  padding: 60px 0;
+  text-align: center;
 }
+
 .title-how {
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-size: 38px;
   font-weight: 600;
   line-height: 45.6px;
-  text-align: left;
   margin-bottom: 10px;
 }
+
 .subtitle-how {
   margin-bottom: 40px;
   color: #b3b3b3;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 35.2px;
-  text-align: left;
 }
+
 .cards-how {
-  width: 330px;
-  height: 439px;
   display: flex;
-  justify-content: space-between;
-  gap: 80px;
+  gap: 40px;
+  justify-content: center;
 }
+
 .card-how {
   background: #3b3b3b;
   border-radius: 20px;
   padding: 20px;
+  width: 300px;
   text-align: center;
 }
+
 .card-how img {
-  width: 250px;
-  height: 250px;
+  width: 120px;
+  height: 120px;
   margin-bottom: 20px;
-  border-radius: 50px;
+  border-radius: 50%;
 }
+
 .card-title {
   margin-bottom: 10px;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-size: 22px;
   font-weight: 600;
   line-height: 30.8px;
-  text-align: center;
 }
+
 .card-description {
   color: #b3b3b3;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4px;
-  text-align: center;
 }
 
 /* Weekly-Digest */
@@ -696,61 +706,67 @@ nav ul li a {
   background-color: #2b2b2b;
   display: flex;
   align-items: center;
-  height: 550px;
+  justify-content: center;
+  padding: 20px;
+  height: auto;
 }
+
 .image-head {
   background-color: #3b3b3b;
   display: flex;
-  height: 430px;
-  padding: 60px;
+  align-items: center;
   gap: 80px;
+  padding: 60px;
   border-radius: 20px;
+  max-width: 1200px;
+  width: 100%;
 }
+
 .image-container {
   flex: 1;
-  padding-right: 20px;
 }
+
 .image-container img {
-  width: 425px;
-  height: 310px;
+  width: 100%;
+  max-width: 425px;
+  height: auto;
   border-radius: 20px;
 }
+
 .content {
   display: flex;
-  align-items: center;
   flex-direction: column;
   color: #fff;
-  width: 425px;
-  height: 272px;
-  gap: 40px;
-  color: #fff;
+  gap: 20px;
+  max-width: 425px;
+  width: 100%;
+  text-align: left;
 }
+
 .content h2 {
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-size: 38px;
   font-weight: 600;
-  line-height: 45.6px;
-  text-align: left;
+  line-height: 1.2;
 }
+
 .content p {
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
-  line-height: 35.2px;
-  text-align: left;
+  line-height: 1.6;
 }
+
 .subscribe-container {
-  width: 425px;
-  height: 60px;
   display: flex;
   align-items: center;
   border: 2px solid #a259ff;
   border-radius: 20px;
   overflow: hidden;
   background-color: #fff;
-  padding: 25px 0px 25px 0px;
-  gap: 12px;
+  width: 100%;
 }
+
 .subscribe-container input[type="email"] {
   border: none;
   padding: 10px 20px;
@@ -758,20 +774,20 @@ nav ul li a {
   outline: none;
   flex: 1;
 }
+
 .subscribe-container button {
-  width: 400px;
-  height: 60px;
   background-color: #a259ff;
   color: #fff;
   border: none;
   padding: 10px 20px;
   font-size: 14px;
   cursor: pointer;
+  border-radius: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
 }
+
 .subscribe-container button i {
   margin-right: 5px;
 }
@@ -783,7 +799,6 @@ nav ul li a {
   justify-content: space-between;
   background-color: #3b3b3b;
   padding: 40px 195px;
-  height: 334px;
   gap: 30px;
 }
 
@@ -822,6 +837,7 @@ nav ul li a {
 .footer-column .social-icons a:hover {
   color: #fff;
 }
+
 .social-icons img {
   width: 32px;
   height: 32px;
@@ -858,15 +874,15 @@ nav ul li a {
   gap: 12px;
   border-radius: 20px;
 }
+
 .subscribe-container-2 input[type="email"] {
   border: none;
   font-size: 14px;
   outline: none;
   flex: 1;
 }
+
 .subscribe-container-2 button {
-  width: 400px;
-  height: 60px;
   background-color: #a259ff;
   color: #fff;
   border: none;
@@ -878,19 +894,16 @@ nav ul li a {
   align-items: center;
   border-radius: 20px;
 }
-.subscribe-container button i {
-  margin-right: 5px;
-}
 
 .footer-bottom {
   padding: 10px 0;
   color: #bbb;
   border-top: 1px solid #444;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 13.2px;
-  text-align: left;
+  text-align: center;
 }
 
 /* Responsive design */
@@ -904,99 +917,266 @@ nav ul li a {
   }
 
   .navbar {
-    flex-direction: column;
     height: auto;
-    padding: 20px 0;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   .menu {
-    width: 100%;
-    flex-direction: column;
-    gap: 15px;
-    margin: 20px 0;
+    display: none;
   }
 
-  .auth-buttons {
-    width: 100%;
-    justify-content: center;
+  .menu.active {
+    display: block;
   }
 
   .hero {
     flex-direction: column;
+    align-items: center;
+    padding: 20px;
     height: auto;
-    padding: 40px 0;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 90%;
+    margin-bottom: 20px;
   }
 
   .hero-content h1 {
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 15px;
   }
 
   .hero-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .btn-primary {
+    width: auto;
+    padding: 12px 40px;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 0;
+    max-width: 90%;
+  }
+
+  .stats div {
+    text-align: center;
+    flex: 1; /* Ensures the stats align evenly */
+  }
+
+  .featured-nft {
+    width: 100%;
+    max-width: 400px;
+    background-color: #2a2a2a;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px auto;
+  }
+
+  .featured-nft img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .image-caption {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .image-caption h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .image-caption p {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-caption p i {
+    margin-right: 5px;
+  }
+
+  .trending-collection {
+    padding: 40px 0;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .subtitle {
     font-size: 18px;
     line-height: 28px;
   }
 
-  .wrapper {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .featured-nft {
-    max-width: 100%;
-  }
-
-  .stats {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .trending-collection {
-    height: auto;
-    padding: 40px 0;
-  }
-
+  /* Two-column layout */
   .collection {
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px; /* Reduced gap for tablet */
-  }
-
-  .Top-Creators {
-    height: auto;
-    padding: 40px 0;
-  }
-
-  .creators {
-    flex-direction: column; /* Stack creators vertically */
     gap: 20px;
+    justify-content: center;
   }
-
-  .creator-container {
-    width: 90%; /* Wider for tablet */
+  .item {
+    width: calc(50% - 10px);
+    max-width: 330px;
     margin-bottom: 20px;
   }
 
-  .browse-categories {
-    height: auto;
-    padding: 40px 0;
-    gap: 15px; /* Reduced gap for tablet */
+  /* Thumbnails and count size adjustments */
+  .item .thumbnails {
+    justify-content: center;
+    gap: 10px;
+  }
+  .item .thumbnails img,
+  .item .count {
+    width: 70px;
+    height: 70px;
+    font-size: 0.8em;
   }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .item .title {
+    font-size: 1em;
+    text-align: center;
   }
+  .item .author {
+    justify-content: center;
+  }
+  .trending-collection .collection .item:last-child {
+    display: none;
+  }
+
+  .Browse-Categories {
+    padding: 40px 20px;
+  }
+
+  .Browse-Categories h2 {
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+  }
+  .browse-text {
+    padding: 0px;
+  }
+
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .category {
+    padding: 15px;
+  }
+
+  .category img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .category h3 {
+    font-size: 18px;
+  }
+
   .more-nfts {
     height: auto;
-    padding: 40px 0;
+    padding: 20px;
+  }
+
+  .more-nfts-header {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header-text h1 {
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  .header-text p {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .see-all {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .more-nfts {
+    padding: 20px;
+    height: auto;
+  }
+
+  .header-text h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .header-text p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .see-all {
+    margin-top: 10px;
+    width: 40%;
+    justify-content: center;
   }
 
   .nft-cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .nft-card {
+    width: 310px;
+    height: 420px;
+  }
+
+  .details {
+    padding: 10px;
+  }
+
+  .details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .creator-1 {
+    font-size: 14px;
+    padding: 10px;
+    width: auto;
+    text-align: center;
+  }
+
+  .price-bid {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    gap: 10px;
+  }
+  .nft-card:last-child {
+    display: none;
   }
 
   .Magic-Mushroom {
@@ -1014,194 +1194,383 @@ nav ul li a {
   }
 
   .how-it-works {
-    height: auto;
+    padding: 40px 20px;
+  }
+
+  .title-how {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .subtitle-how {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
   }
 
   .cards-how {
     align-items: center;
-    height: auto;
     gap: 20px;
   }
 
-  .weekly-digest {
-    height: auto;
+  .card-how {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .card-how img {
+    width: 100px;
+    height: 100px;
   }
 
   .image-head {
-    flex-direction: column;
-    height: auto;
+    flex-direction: row;
+    align-items: center;
     padding: 20px;
     gap: 20px;
   }
 
-  .image-container img {
+  .content {
+    max-width: 50%;
+  }
+
+  .content h2 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .subscribe-container {
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: auto;
+  }
+
+  .subscribe-container input[type="email"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .subscribe-container button {
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer {
+    padding: 40px 30px;
     height: auto;
   }
 
   .footer-container {
     flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-column,
+  .footer-column-2,
+  .footer-column-3 {
     width: 100%;
+    gap: 15px;
+  }
+
+  .footer-column .logo img {
+    width: 200px;
     height: auto;
-    gap: 20px;
+  }
+
+  .footer-column p,
+  .footer-column-2 a,
+  .footer-column-3 p {
+    font-size: 14px;
+  }
+
+  .footer-column-2 h3,
+  .footer-column-3 h3 {
+    font-size: 20px;
+  }
+
+  .subscribe-container-2 {
+    width: 100%;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .subscribe-container-2 input[type="email"] {
+    width: auto;
+    padding: 8px;
+  }
+
+  .subscribe-container-2 button {
+    padding: 25px 50px;
   }
 
   /* Specific adjustments for the Top Creators section */
+
   .Top-Creators {
-    padding: 40px;
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 20px;
   }
 
+  .header {
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .header-content {
+    width: 343px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .header p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .view-rankings {
+    width: auto;
+    align-self: flex-end;
+    padding: 10px 20px;
+  }
+
+  .creators {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
   .creator-container {
-    width: 90%;
-    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
   }
 
   .creator {
-    width: 100%; /* Make the creator card take up full width */
+    padding: 15px;
+  }
+
+  .creator img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+
+  .creator h3 {
+    font-size: 18px;
+  }
+
+  .creator p {
+    font-size: 14px;
+  }
+
+  .creator .rank {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    top: 15px;
+  }
+
+  .creator {
+    display: flex;
+    align-items: center;
+    background: #3b3b3b;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .creator h3,
+  .creator p {
+    margin: 0;
+    text-align: left;
+  }
+  .creator-container:nth-child(n + 7) {
+    display: none;
   }
 }
 
 /* Mobile view (max-width: 375px) */
 @media screen and (max-width: 375px) {
+  /* Layout */
   .container {
     max-width: 375px;
     width: 90%;
     margin: 0 auto;
-    padding: 20px;
   }
 
+  /* Header */
   .navbar {
     padding: 15px;
     width: 375px;
   }
-
   nav ul li a {
     font-size: 14px;
   }
 
-  .hero,
-  .trending-collection,
-  .Top-Creators,
-  .browse-categories,
-  .more-nfts,
-  .Magic-Mushroom,
-  .how-it-works,
-  .weekly-digest,
-  .footer {
-    padding: 20px; /* Reduced padding for mobile */
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-  }
-
-  .wrapper,
-  .collection,
-  .creators,
-  .nft-cards,
-  .cards-how {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center;
-  }
-
-  .menu {
-    width: 100%;
-    flex-direction: column;
-    gap: 15px;
-    margin: 20px 0;
-  }
-
-  .auth-buttons {
-    width: 100%;
-    justify-content: center;
-  }
-
+  /* Hero Section */
   .hero {
-    height: auto;
+    flex-direction: column;
+    align-items: center; 
+    padding: 0; /* Remove default padding */
+    height: auto; /* Let the height adjust automatically */
+  }
+
+  .hero-content {
+    width: 100%; 
+    text-align: center;
+    padding: 20px; /* Add padding for the content */
   }
 
   .hero-content h1 {
-    font-size: 28px; /* Reduced font size for mobile */
+    font-size: 24px;
     line-height: 1.2;
+    margin-bottom: 10px;
   }
 
   .hero-content p {
-    font-size: 16px; /* Reduced font size for mobile */
+    font-size: 14px;
     line-height: 1.5;
+    margin-bottom: 20px; 
+  }
+  .wrapper{
+    flex-direction: column;
   }
 
-  .wrapper {
-    gap: 20px;
-  }
-
-  .featured-nft {
-    max-width: 100%;
+  .btn-primary {
+    width: 100%; 
+    padding: 15px 30px;
+    font-size: 16px; 
+    border-radius: 20px; /* Rounded corners */
+    margin-bottom: 20px; 
   }
 
   .stats {
-    flex-direction: column;
-    gap: 15px; /* Reduced gap for mobile */
-  }
-
-  .trending-collection {
-    height: auto;
-  }
-  .item {
-    height: auto; /* Adjust height as needed */
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
     width: 100%;
   }
 
-  .collection {
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+  .stats div {
+    text-align: center;
   }
 
-  .Top-Creators {
+  .featured-nft {
+    width: 100%;
+    margin: 0; /* Remove default margin */
+  }
+
+  .featured-nft img {
+    width: 100%;
     height: auto;
+    border-radius: 20px; /* Rounded corners */
   }
 
-  .creators {
-    justify-content: center;
-    gap: 15px;
+  /* Trending Collection */
+  .trending-collection .collection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .thumbnails img,
+  .count {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Top Creators */
+  .Top-Creators .creators {
+    flex-direction: column;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .creator-container {
     width: 90%;
-    margin-bottom: 20px;
   }
 
-  .browse-categories {
-    height: auto;
-    gap: 15px; /* Reduced gap for mobile */
+  .creator {
+    padding: 10px;
   }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+  .creator img {
+    width: 60px;
+    height: 60px;
   }
 
-  .card {
-    width: 100%; /* Make cards take up full width */
+  .creator h3 {
+    font-size: 16px;
   }
 
-  .more-nfts {
-    height: auto;
+  .creator p {
+    font-size: 12px;
   }
 
-  .nft-cards {
+  /* Browse Categories */
+  .browse-categories .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .grid-item {
+    width: 100%;
+  }
+
+  .browse-text p {
+    font-size: 14px;
+  }
+
+  /* More NFTs */
+  .more-nfts .nft-cards {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
+  .nft-cards {
+    height: 1246px;
+  }
+  .nft-card {
+    width: 100%;
+  }
 
+  .details h3 {
+    font-size: 16px;
+  }
+
+  .creator-1 {
+    font-size: 14px;
+  }
+
+  .price-bid {
+    font-size: 12px;
+  }
+
+  /* Magic Mushroom */
   .Magic-Mushroom {
-    height: auto;
     padding: 40px 0;
+    width: 100%;
+  }
+
+  .content-mushroom {
     width: 100%;
   }
 
@@ -1211,55 +1580,173 @@ nav ul li a {
     gap: 20px;
   }
 
-  .how-it-works {
-    height: auto;
+  .title2 {
+    font-size: 50px;
   }
 
-  .cards-how {
+  .button2 {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 185px;
+  }
+
+  .timer {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .timer p {
+    font-size: 14px;
+  }
+
+  .countdown1 {
+    font-size: 24px;
+  }
+
+  .labels {
+    font-size: 12px;
+    gap: 15px;
+  }
+
+  /* How It Works */
+  .how-it-works .cards-how {
+    flex-direction: column;
     align-items: center;
-    height: auto;
-    gap: 20px;
+    gap: 15px;
   }
 
+  .card-how {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .card-how img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-description {
+    font-size: 14px;
+  }
+
+  /* Weekly Digest */
+  /* Weekly Digest Section */
   .weekly-digest {
     height: auto;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .image-head {
-    flex-direction: column;
-    height: auto;
+    flex-direction: column; 
     padding: 20px;
     gap: 20px;
   }
 
   .image-container img {
     width: 100%;
-    height: auto;
+    height: auto; 
   }
 
-  .footer {
-    height: auto;
+  .content {
+    max-width: 90%;
   }
 
+  .content h2 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .content p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* Button Adjustments */
+  .subscribe-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin-bottom: 15px;
+  }
+
+  .subscribe-container input[type="email"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .subscribe-container button {
+    padding: 10px 20px;
+    font-size: 16px; 
+    width: 100%;
+    border-radius: 20px; 
+  }
+
+  /* Footer */
   .footer-container {
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-column,
+  .footer-column-2,
+  .footer-column-3 {
     width: 100%;
-    height: auto;
-    gap: 20px;
   }
 
-  /* Specific adjustments for the Top Creators section */
-  .Top-Creators {
-    padding: 40px;
-    gap: 20px;
+  .footer-column .logo img {
+    width: 200px;
   }
 
-  .creator-container {
-    width: 90%;
-    margin-bottom: 20px;
+  .footer-column p,
+  .footer-column-2 a,
+  .footer-column-3 p {
+    font-size: 14px;
   }
 
-  .creator {
-    width: 100%; /* Make the creator card take up full width */
+  .footer-column-2 h3,
+  .footer-column-3 h3 {
+    font-size: 18px;
+  }
+
+  .subscribe-container-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin-bottom: 15px;
+  }
+
+  .subscribe-container-2 input[type="email"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .subscribe-container-2 button {
+    padding: 10px 20px;
+    font-size: 16px; 
+    width: 100%;
+    border-radius: 20px; 
+  }
+
+
+  /* Hamburger Menu */
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: block;
   }
 }

@@ -24,7 +24,59 @@ let countdownFunction = setInterval(function () {
   }
 }, 1000);
 
-// Trending Collection section
+// Button Handler
+       $(document).ready(function() {
+        $('.hamburger').click(function() {
+          $('.menu').toggleClass('active');
+        });
+      });
+
+
+      $(document).ready(function() {
+        let isRankShown = false;
+        let isNftShown = false;
+      
+        // Function to toggle visibility and button text
+        function toggleVisibility(selector, buttonText) {
+          $(selector).toggle();
+          if ($(selector).is(':visible')) {
+              $(this).text(buttonText);
+          } else {
+              $(this).text('View Rankings'); 
+          }
+        }
+      
+        // Handle "View Rankings" click for Trending Collection
+        $('#view-rankings').click(function() {
+          toggleVisibility('#last-card', 'Hide Rankings');
+        });
+      
+        // Handle "View Rankings" click for Top Creators
+        $('#view-rank').click(function() {
+          if (isRankShown) {
+              $('.creator-container:nth-child(n+7)').slideUp();
+          } else {
+              $('.creator-container:nth-child(n+7)').slideDown();
+          }
+          isRankShown = !isRankShown;
+          $(this).text(isRankShown ? 'Hide Rankings' : 'View Rankings');
+        });
+      
+        // Handle "See All" click for More NFTs
+        $('#see-all-tab').click(function(e) {
+          e.preventDefault();
+          if (isNftShown) {
+              $('.nft-card:last-child').slideUp();
+          } else {
+              $('.nft-card:last-child').slideDown();
+          }
+          isNftShown = !isNftShown;
+          $(this).text(isNftShown ? 'Hide' : 'See All');
+        });
+      });
+
+
+
 
 const Data = {
   sections: {
